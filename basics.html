@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="app.css">
+
+</head>
+
+ <style type="text/css">
+    .thumbnail img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+  </style>
+
+<body>
+
+<!-- NAV BAR -->
+
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#eef7fa;">
+  <h1 class="navbar-brand mb-0"> Bread & Sugar</h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#jump1">Best Sellers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#jump2">Menu</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="cart">Shopping Cart</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+ <div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="content">
+          <h1> Bread & Sugar</h1>
+        <hr>
+      </div>
+    </div>
+  </div>
+ </div>
+
+ <!-- Who We Are -->
+
+<div class="container">
+  <h2>Who We Are</h2>
+  <div class="row display-flex">
+      <div class="col-lg-4 col-sm-12">
+        <div class="img-thumbnail">
+          <div style="text-align: center">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIrSURBVGhD7djPi01hHMfx42dMyY/BbmIjC2RlbaeMWNjZKIVSNjZkYcGOYiFCZmE1DYlYKJrZCH/BrMw0CxtpGkIR+fX+7Kbrc895zo97z3Pr+dRrc7rP9zzn3PPjOd8sJSUlJWUQMoRRnMM13MFlHMEmlMlqHMBF3MZ1XECVWsHZhYf4jr9d/MA4tiMvw9DBf4KrI7/xCjrQRrICN6HCbofOT5zHUnTmEObhxnUzhc2onLV4CVc8hCags68sww2434V4hx0oHZ3Np3BFy5jGFjxatK2qWWxEqZyBK1aFLjW3vQrdp8FZg7LXcb/8wR4E5TRckVhMICjP4ArE4iP08MiNbvJvcAViUnh56XntBsbmMHKzE25gbE4hN1peuIGxOYHc6G3uBsbmIArzFW5wTHajMI/hBsfiA9yC9L8chysQi3sIygZ8hisSg70Ijr7aXJG26dOgVNbhPVyxtvxC8IJxcfZBq01XtA26SirnKlzRfnuN5agcrTKfwBXvlxk00lVRC6jOt3sd+lbXp3Jj0cG8gNtZr8xhKxrPKjTRRAihpsUIehYtDa7A7bwpz6HFa19yDOosuonUod5XradTlWipsAA3obL0slPTo7Vsw1u4yYX6gv1oPesxCTfJInoyqUEeTdTsvgs32W7eoFZzupc5i5D12X3ocR51TkI3rzsAGUNhgy2WHIX7Z25hCQYqnR39BxiYf6IzenFqjXYJK7UhJSUlJSXLsuwfodUUv20RXPIAAAAASUVORK5CYII=">
+          <p>Founded by two dedicated bakers, our bakery delivers sweets that are made with love every step of the way</p>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12 ">
+        <div class="img-thumbnail">
+            <div style="text-align: center">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIuSURBVGhD7djNSxVRHMbxG1mhQQW+IGqbFCxDEPsHhExciBtp06KlEKGbBInatLBFtAxXggtxI+SuVYRC7RIEdacIQQpRSFEavft9dH5wvBzpvniZc+U88IE7b2fOb+bM3JnJxMTElFUacQPdaNKMckoFBrGCf1keoixyEW9hHf+IucR73EWQqcSJ/Z+ZWqxCBWziJk4i2OioP4M6q07/wBu8TqYXUY2g04Ut2NDxaUfQacZn+DrvmkTQmYav49n+ohNB5jR24Ou4zxMEmRb4OnyYWZQ8Nbiw//O/0a21Dro+fB0+zAx0Oz6LI43u5yN4B9vZEnrhi4bSPXyA1tW4t+1yYev/wTyuoeioCJ1q28kXbDvTd+BGRbyCLf+Er860awNuW0aF6H/mZzL9G/0oKnosUGM6ujoDGi56HroNXcDayWVYHkHrq4N9mkFOYQhaV8vWYHemMxiFnYVltEE5Bw0zzf+GBhQcNayGBvamDuY+tGwclxI2nJ4688wU1GEVmL3sOVTodWeeXIG1+TiZZ3T95RQdfTUuei7KzlVoB2nRf1POsfu/r/p6LKRgHXkX8gLaaGxvKozcQt6FdEBDS2N7Aj3Q7TBND5B3IYreDb5DG4ck70KUVug9wtdgWgoqRDkPX4NpiYXEQkokFnLsCvmFlymyB9miC9HXkDRT0COKm2NXiF5y9IU8LXovOZJCQhELiYWUSCwkFlIisZAq6MtfKIYRExMTU/bJZHYBEEt7JuxfZYQAAAAASUVORK5CYII=">
+              <p>Carefully curated by our top bakers and decorators, we present a wide selection of bread, cake, and sweets.
+              </p>
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <div class="img-thumbnail">
+          <div style="text-align: center">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL9SURBVGhD7dhJyE1xGMfxax4jwwYLRVYUG2OZy1BIYUNYKCJKmYoMybBBktiIWEhIITZSko0hEpljJ1KUMmX8ft/3/uvp9ioLdf6nzq8+3fcOvT1P5/ynU6tSpUqVKv8xrTAam3ASu1CK9K6/mv64gd/BCWSd2XiBx03varW2uIfYhDYj22xEKvSlH5BpiA0kY5BlJiIWehNmHeLnugvHTJY5iljsYZiFiJ8/wkBklfFY1Pxn7SpiwXNgOmA+1sLbzDGTVUbhC96jIw4hNeFgb4fsY5HeIqnwWXCN+IVvcLyY9piHY3iAt7DJXsgik5GakIucWYzhzX82NePMFX+npyg8beqvSxGLO4AYbzuvTPxN4jpTaKbgIbpgAWJx2xDjlfE2i7/RBhSaQfgMi/FqOB5igRPQGK+KE8AVHME4FJ7LSEVfgIvZrfr7MzA2sx0H4fbDCaATsolT6w+kRpx9THd4u3XGOaTvow9YgkIzGA7uvojFvUbM3/ZS+oRCb6mpsIgVcM34iVSct1RMN7ivig3IiWEECovniHewGLff5g5SgTbXGMeMRTubLYNrSOFbkd1IRasHHAsf4cnOAbwet/EGT3AeNtAV2eQaYiNDYFrXXy8hfh89R1o0C8lYOGhN45F0KFJsxisTv08cU5NQWDypuYt1X2Shp5GKcxFsXAts2INRmgC+4yIGoLB4VniGVLhNeb5I7/fBuFYMg7dZ2rk6mPvA/1F43MClorUc3uM7sQcO3v34ivi7+1gNt+lZpPE87RYjZi/i95FjIk0EhWcVYnFrEGNj8fvEA5JTcjaZgVhgOhSleJs5Zk7B2cypeQeyOeGleI+/gk242JmR8JbzaqyEE0BaQ7JOP8yFAztOvZHNui0vRXxI0FITcmBn+WTQHe1x+NCgpx8Q14SWHha4l/JEmF1s4ixSoekJiPG76XA284HaTGSx4DWmsQl5ZUqVlprwvZ+XJn9rIpstxr9mK0rfhPGh2nWUuokUm9mCUjdRpUqVKrmlVvsD/60jA9IQB/AAAAAASUVORK5CYII=">
+          <p>To guarantee the same delcious tastes every day, our delicious treats begin first as fresh local ingredients</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Best Sellers -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="review">
+        <a id="jump1"><h2>Best Sellers</h2></a>
+
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+          <div class="thumbnail">
+            <img class="img-circle" src="jessica-castro-348993.jpg" height="200">
+            <h3><a href="cart.html">Shortcake Cupcakes</a></h3>
+            <p>Cupcakes that packs the punch of a strawberry shortcake. It's great as a small gift for a friend or a 'treat yourself' dessert.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="thumbnail">
+            <img class="img-circle" src="otto-norin-430454.jpg" height="200">
+            <h3>Cinnamon Rolls</h3>
+            <p>Fluffy, rich cinnamon rolls baked fresh and sprinkled with sugar for that Pintrest-ready look. Yum!</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="thumbnail">
+            <img class="img-circle" src="annie-spratt-418650.jpg" height="200">
+            <h3>Lavender Cake</h3>
+            <p>A light pound cake infused with the flavor of lavender. It has an airy texture that's perfect as dessert for any cool spring day.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="thumbnail">
+            <img class="img-circle" src="christiann-koepke-386020.jpg" height="200">
+            <h3>Raspberry Cake</h3>
+             <p>A classic vanilla cake with buttercream frosting and enticing raspberries. Raspberries are tucked between layers and cover the top.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu -->
+
+<div class="container">
+  <div class="row">
+    <div class ="col-sm-12">
+      <div class="img-thumbnail">
+        <a id="jump2"><h2><u>Menu</u></h2></a>
+        <p class="glutenfree"> * gluten free <p>
+        <div class ="menuItems">
+        <ol>
+          <li>Cinnamon Rolls</li>
+          <li>Raspberry Cake *</li>
+          <li><a href="cart.html">Shortcake Cupcakes</a></li>
+          <li>Chocolate and Blueberry Muffins</li>
+          <li>Lavender Pound Cake with Vanilla Icing</li>
+          <li>Chai Whole Wheat Bread *</li>
+        </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="app.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

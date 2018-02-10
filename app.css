@@ -1,0 +1,98 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Lato";
+    color: #4c4c4c;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 5em;
+	padding-left: 2%;
+}
+
+a{
+    color: inherit;
+}
+
+.content{
+	background: url(taylor-kiser-373467.jpg);
+    background-size: cover;
+    background-position: center; 
+	padding-top: 30%;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.5),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+
+hr {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+div p{
+	width: 100%;
+    height: 100%;
+    font-family: "Arial";
+    color: black;
+    margin-top: 20px;
+    text-align: center;
+}
+
+div h2{
+    text-align: center;
+}
+
+div h3{
+     margin-top: 20px;
+     text-align: center;
+}
+.review {
+	margin-top: 30px;
+    margin-bottom: 30px;
+	padding: 2%;
+	background-color: #eef7fa;
+}
+
+.description {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 2%;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItems li {
+    font-family: "Lato";
+    color: #4c4c4c;
+    font-size: 25px;
+}
+
+.glutenfree{
+    margin-left: 20px;
+    color: red;
+    font-size: 15px;
+    text-align: left;
+}
+
+.inline{
+    display: inline-block;
+}
+s
+div button{
+    display:inline-block;
+}
